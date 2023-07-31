@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body {
+    /* (shorthand) 
+    background; color image repeat position size */
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#container {
+    width: 360px;
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  */
+
+  /* shorthand*/
+  margin: auto;
+  padding-top: 56px ;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+/*
+da tbm pra colocar um display block no profile img + margin:auto
+*/
+
+#profile img{
+    width: 112px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 8px;
+    margin-top: 8px;
+    font-weight: bold;
+    
+}
+
+/* links */
+
+ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 500;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 16px 24px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    transition: all 0.5s;
+}
+
+/* pseudo-seletor */
+li a:hover{
+    text-decoration: underline;
+    border: 2px solid #ffffff;  
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* @jlucas_crf */
+#devlink {
+   margin-bottom: 10px;
+}
