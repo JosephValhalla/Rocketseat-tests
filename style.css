@@ -80,7 +80,7 @@ da tbm pra colocar um display block no profile img + margin:auto
     border-radius: 50%;
     
     position: absolute;
-    lef: 0;
+    left: 0;
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
